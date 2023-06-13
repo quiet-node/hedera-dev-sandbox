@@ -4,10 +4,13 @@ import (
 	"hedera-dev/initializers"
 	"hedera-dev/models"
 	"log"
+
+	"github.com/hashgraph/hedera-sdk-go/v2"
 )
 
 var (
 	ha *models.HederaAcount
+	hc *hedera.Client
 )
 
 func init() {
@@ -17,9 +20,13 @@ func init() {
 	// construct HederaAcount
 	ha = initializers.InitHederaAccount()
 
+	// init HederaClient
+	hc = initializers.InitHederaClientForTestnet(ha)
+
 }
 
 func main() {
-	log.Println(ha.AccountId)
-	log.Println(ha.PrivateKey)
+	log.Println(hc.GetOperatorAccountID())
+	log.Println(hc.GetOperatorPublicKey())
+	
 }
