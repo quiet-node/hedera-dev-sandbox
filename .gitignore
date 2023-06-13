@@ -22,3 +22,4 @@ go.work
 
 # Env
 .env
+hedera-dev
