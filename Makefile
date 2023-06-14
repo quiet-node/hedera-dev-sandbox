@@ -8,9 +8,8 @@ SERVER=hedera-dev
 # dev-mode
 .phony: dev
 dev: 
-	@$(COMPILEDAEMON_PATH) -command="./$(SERVER)"
+	$(COMPILEDAEMON_PATH) -command="./$(SERVER)"
 
 # local run
-.phony: go-run
-go-run:
-	@go run .
+run:
+	go run .
