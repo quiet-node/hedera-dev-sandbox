@@ -33,3 +33,7 @@ HED_PRIVATE_KEY=Account ID
 ```
 make dev
 ```
+
+## Resources:
+
+- https://docs.hedera.com/hedera/getting-started
