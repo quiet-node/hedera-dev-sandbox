@@ -1,6 +1,6 @@
 # Hedera Development Sandbox
 
-A dynamic playground atop [Hedera Testnet](https://docs.hedera.com/hedera/networks/testnet), exhibiting seamless interaction via [hedera-sdk-go@v2](https://github.com/hashgraph/hedera-sdk-go).
+A playground atop [Hedera Testnet](https://docs.hedera.com/hedera/networks/testnet), exhibiting seamless interaction via [hedera-sdk-go@v2](https://github.com/hashgraph/hedera-sdk-go).
 
 # Getting Started
 
