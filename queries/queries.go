@@ -12,7 +12,7 @@ import (
 //
 // @param client *hedera.Client
 //
-// @return hedera.
+// @return hedera.AccountBalance
 func GetBalanceQuery(accountId hedera.AccountID, hc *hedera.Client) hedera.AccountBalance {
 	// prepare query
 	query := hedera.NewAccountBalanceQuery().SetAccountID(accountId)
