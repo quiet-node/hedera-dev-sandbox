@@ -9,6 +9,8 @@ import (
 )
 
 // @dev handle creating a new account with an initial balance of 1000 th
+//
+// @param hc *hedera.Client
 func CreateNewAccount(hc *hedera.Client) {
 	// Generate new private key
 	newAccountPrivateKey, err := hedera.PrivateKeyGenerateEd25519()
@@ -46,7 +48,7 @@ func CreateNewAccount(hc *hedera.Client) {
 // 
 // @param receiverAccountId hedera.AccountID
 // 
-// @param client *hedera.Client
+// @param hc *hedera.Client
 func TransferHbar(senderAccountId, receiverAccountId hedera.AccountID, hc *hedera.Client) {
 	// prepare transaction
 	transferTransaction := hedera.NewTransferTransaction().
